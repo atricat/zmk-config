@@ -9,6 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
+// [RA] https://github.com/nickcoutsos/keymap-editor/wiki/Keycodes-for-other-locales
+#include "keys_de.h"
 
 #define BASE 0
 #define LOWER 1
