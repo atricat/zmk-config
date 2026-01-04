@@ -106,5 +106,17 @@
             >;
         };
 
+        ext1 {
+          status = "reserved";
+        };
+
+        ext2 {
+          status = "reserved";
+        };
+
+        ext3 {
+          status = "reserved";
+        };
+
     };
 };
