@@ -36,6 +36,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <36 49>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -54,7 +63,7 @@
 &kp TAB                 &kp Q         &kp W         &kp E         &kp R         &kp T                              &kp DE_Z      &kp U         &kp I         &kp O          &kp P            &mt DE_PLUS DE_U_UMLAUT
 &none                   &kp A         &kp S         &kp D         &kp F         &kp G                              &kp H         &kp J         &kp K         &kp L          &kp DE_O_UMLAUT  &mt DE_HASH DE_A_UMLAUT
 &mt LSHFT DE_LESS_THAN  &kp DE_Y      &kp X         &kp C         &kp V         &kp B         &kp C_MUTE    &none  &kp N         &kp M         &kp DE_COMMA  &kp DE_PERIOD  &kp DE_MINUS     &kp RSHFT
-                                      &kp LCTRL     &kp LGUI      &kp LALT      &kp RET       &mo 1         &mo 2  &kp SPACE     &kp RALT      &kp C_MENU    &kp RCTRL
+                                      &kp LCTRL     &kp LGUI      &kp LALT      &kp RET       &mo 2         &mo 1  &kp SPACE     &kp RALT      &kp C_MENU    &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -93,11 +102,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans   &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
-                          &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans        &trans       &trans         &trans       &trans           &kp HOME
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp K_REDO    &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO       &kp END
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp CAPSLOCK  &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT_ARROW  &kp DEL
+&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &kp INS       &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END          &trans
+                          &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans       &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
