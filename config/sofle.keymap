@@ -45,6 +45,64 @@
         };
     };
 
+    macros {
+        brace_open_close: brace_open_close {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_LEFT_BRACE &kp DE_RIGHT_BRACE &kp LEFT_ARROW>;
+            label = "BRACE_OPEN_CLOSE";
+        };
+
+        bracket_open_close: paren_open_close {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_LEFT_BRACKET &kp DE_RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "PAREN_OPEN_CLOSE";
+        };
+
+        paren_open_close: bracket_open_close {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_LEFT_PARENTHESIS &kp DE_RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "BRACKET_OPEN_CLOSE";
+        };
+
+        code_equals: code_equals {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_EQUAL &kp DE_EQUAL>;
+            label = "CODE_EQUALS";
+        };
+
+        code_not_equals: code_not_equals {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_EXCLAMATION &kp DE_EQUAL>;
+            label = "CODE_NOT_EQUALS";
+        };
+
+        quote_dual: quote_dual {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_DOUBLE_QUOTES &kp DE_DOUBLE_QUOTES>;
+            label = "QUOTE_DUAL";
+        };
+
+        amp_dual: amp_dual {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_AMPERSAND &kp DE_AMPERSAND>;
+            label = "AMP_DUAL";
+        };
+
+        code_or: code_or {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_PIPE &kp DE_PIPE>;
+            label = "CODE_OR";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
