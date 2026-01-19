@@ -19,6 +19,11 @@
 #define RAISE 2
 #define ADJUST 3
 
+// https://zmk.dev/docs/features/low-power-states#wakeup-sources
+// AI mode sez:
+
+&kscan0 { wakeup-source; };
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -45,11 +50,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&mt DE_CARET ESC        &mt F1 DE_N1  &mt F2 DE_N2  &mt F3 DE_N3  &mt F4 DE_N4  &mt F5 DE_N5                           &mt F6 DE_N6  &mt F7 DE_N7  &mt F8 DE_N8  &mt F9 DE_N9   &mt F10 DE_N0    &mt DE_SHARP_S BACKSPACE
-&kp TAB                 &kp Q         &kp W         &kp E         &kp R         &kp T                                  &kp DE_Z      &kp U         &kp I         &kp O          &kp P            &mt DE_PLUS DE_U_UMLAUT
-&none                   &kp A         &kp S         &kp D         &kp F         &kp G                                  &kp H         &kp J         &kp K         &kp L          &kp DE_O_UMLAUT  &mt DE_HASH DE_A_UMLAUT
-&mt LSHFT DE_LESS_THAN  &kp DE_Y      &kp X         &kp C         &kp V         &kp B         &kp C_MUTE    &none      &kp N         &kp M         &kp DE_COMMA  &kp DE_PERIOD  &kp DE_MINUS     &kp RSHFT
-                                      &kp LCTRL     &kp LGUI      &kp LALT      &mo LOWER     &kp RET       &kp SPACE  &mo RAISE     &kp RALT      &kp C_MENU    &kp RCTRL
+&mt DE_CARET ESC        &mt F1 DE_N1  &mt F2 DE_N2  &mt F3 DE_N3  &mt F4 DE_N4  &mt F5 DE_N5                       &mt F6 DE_N6  &mt F7 DE_N7  &mt F8 DE_N8  &mt F9 DE_N9   &mt F10 DE_N0    &mt DE_SHARP_S BACKSPACE
+&kp TAB                 &kp Q         &kp W         &kp E         &kp R         &kp T                              &kp DE_Z      &kp U         &kp I         &kp O          &kp P            &mt DE_PLUS DE_U_UMLAUT
+&none                   &kp A         &kp S         &kp D         &kp F         &kp G                              &kp H         &kp J         &kp K         &kp L          &kp DE_O_UMLAUT  &mt DE_HASH DE_A_UMLAUT
+&mt LSHFT DE_LESS_THAN  &kp DE_Y      &kp X         &kp C         &kp V         &kp B         &kp C_MUTE    &none  &kp N         &kp M         &kp DE_COMMA  &kp DE_PERIOD  &kp DE_MINUS     &kp RSHFT
+                                      &kp LCTRL     &kp LGUI      &kp LALT      &kp RET       &mo 1         &mo 2  &kp SPACE     &kp RALT      &kp C_MENU    &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
