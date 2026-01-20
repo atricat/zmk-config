@@ -149,11 +149,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&mt DE_CARET ESC  &mt F1 DE_N1  &mt F2 DE_N2  &mt F3 DE_N3  &mt F4 DE_N4  &mt F5 DE_N5                            &mt F6 DE_N6  &mt F7 DE_N7  &mt F8 DE_N8  &mt F9 DE_N9   &mt F10 DE_N0    &mt DE_SHARP_S BACKSPACE
-&kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T                                   &kp DE_Z      &kp U         &kp I         &kp O          &mt DE_ACUTE P   &mt DE_U_UMLAUT DE_PLUS
-&kp DE_LESS_THAN  &kp A         &kp S         &kp D         &kp F         &kp G                                   &kp H         &kp J         &kp K         &kp L          &kp DE_O_UMLAUT  &mt DE_A_UMLAUT DE_HASH
-&kp LSHFT         &kp DE_Y      &kp X         &kp C         &kp V         &kp B            &kp C_MUTE    &none    &kp N         &kp M         &kp DE_COMMA  &kp DE_PERIOD  &kp DE_MINUS     &kp RSHFT
-                                &kp LCTRL     &kp LGUI      &kp LALT      &lt 1 BACKSPACE  &mo 2         &kp RET  &kp SPACE     &kp RALT      &kp C_MENU    &kp RCTRL
+&mt DE_CARET ESC  &mt F1 DE_N1  &mt F2 DE_N2  &mt F3 DE_N3  &mt F4 DE_N4  &mt F5 DE_N5                               &mt F6 DE_N6  &mt F7 DE_N7  &mt F8 DE_N8  &mt F9 DE_N9   &mt F10 DE_N0    &mt DE_SHARP_S BACKSPACE
+&kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T                                      &kp DE_Z      &kp U         &kp I         &kp O          &mt DE_ACUTE P   &mt DE_U_UMLAUT DE_PLUS
+&kp DE_LESS_THAN  &kp A         &kp S         &kp D         &kp F         &kp G                                      &kp H         &kp J         &kp K         &kp L          &kp DE_O_UMLAUT  &mt DE_A_UMLAUT DE_HASH
+&kp LSHFT         &kp DE_Y      &kp X         &kp C         &kp V         &kp B            &kp C_MUTE    &bt BT_NXT  &kp N         &kp M         &kp DE_COMMA  &kp DE_PERIOD  &kp DE_MINUS     &kp RSHFT
+                                &kp LCTRL     &kp LGUI      &kp LALT      &lt 1 BACKSPACE  &mo 2         &kp RET     &kp SPACE     &kp RALT      &kp C_MENU    &kp RCTRL
             >;
 
             sensor-bindings =
@@ -173,11 +173,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&caret_dual   &code_not_equals  &quote_dual  &trans  &trans           &trans                    &code_and   &brace_open_close  &paren_open_close  &bracket_open_close  &code_equals     &kp DELETE
-&trans        &paste_quoted     &trans       &trans  &trans           &trans                    &kp K_REDO  &kp K_PASTE        &kp K_COPY         &kp K_CUT            &kp K_UNDO       &kp DE_U_UMLAUT
-&code_or      &trans            &trans       &trans  &trans           &trans                    &caps_word  &kp LEFT           &kp DOWN           &kp UP               &kp RIGHT_ARROW  &kp DE_A_UMLAUT
-&kp CAPSLOCK  &trans            &trans       &trans  &paste_modified  &trans  &trans    &trans  &kp INS     &kp HOME           &kp PAGE_DOWN      &kp PAGE_UP          &kp END          &kp CAPSLOCK
-                                &trans       &trans  &trans           &trans  &trans    &trans  &trans      &trans             &trans             &trans
+&caret_dual   &code_not_equals  &quote_dual  &trans  &trans           &trans                    &code_and      &brace_open_close  &paren_open_close  &bracket_open_close  &code_equals     &kp DELETE
+&trans        &paste_quoted     &trans       &trans  &trans           &trans                    &kp K_REDO     &kp K_PASTE        &kp K_COPY         &kp K_CUT            &kp K_UNDO       &kp DE_U_UMLAUT
+&code_or      &trans            &trans       &trans  &trans           &trans                    &caps_word     &kp LEFT           &kp DOWN           &kp UP               &kp RIGHT_ARROW  &kp DE_A_UMLAUT
+&kp CAPSLOCK  &trans            &trans       &trans  &paste_modified  &trans  &trans    &trans  &kp INS        &kp HOME           &kp PAGE_DOWN      &kp PAGE_UP          &kp END          &kp CAPSLOCK
+                                &trans       &trans  &trans           &trans  &trans    &trans  &kp BACKSPACE  &kp DELETE         &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
