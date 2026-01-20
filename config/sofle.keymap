@@ -103,6 +103,34 @@
             bindings = <&kp DE_CARET &kp DE_CARET>;
             label = "CAREN_DUAL";
         };
+
+        left_5: left_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT &kp LEFT &kp LEFT>;
+            label = "LEFT_5";
+        };
+
+        right_5: right_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
+            label = "RIGHT_5";
+        };
+
+        paste_modified: paste_modified {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C) &kp K_PASTE>;
+            label = "PASTE_MODIFIED";
+        };
+
+        paste_quoted: paste_quoted {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(Q) &kp K_PASTE>;
+            label = "PASTE_QUOTED";
+        };
     };
 
     keymap {
