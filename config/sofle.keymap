@@ -97,11 +97,11 @@
             label = "CODE_OR";
         };
 
-        caret_dual: caren_dual {
+        caret_dual: caret_dual {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DE_CARET &kp DE_CARET>;
-            label = "CAREN_DUAL";
+            label = "CARET_DUAL";
         };
 
         left_5: left_5 {
