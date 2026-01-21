@@ -38,7 +38,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        caps_lock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <36 49>;
+        };
+    };
 
     macros {
         brace_open_close: brace_open_close {
@@ -173,11 +180,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&caret_dual   &code_not_equals  &quote_dual  &trans  &trans           &trans                             &code_and      &brace_open_close  &paren_open_close  &bracket_open_close  &code_equals     &kp DELETE
-&trans        &paste_quoted     &trans       &trans  &trans           &kp PRINTSCREEN                    &kp K_REDO     &kp K_PASTE        &kp K_COPY         &kp K_CUT            &kp K_UNDO       &kp DE_U_UMLAUT
-&code_or      &trans            &trans       &trans  &trans           &kp SCROLLLOCK                     &caps_word     &kp LEFT           &kp DOWN           &kp UP               &kp RIGHT_ARROW  &kp DE_A_UMLAUT
-&kp CAPSLOCK  &trans            &trans       &trans  &paste_modified  &kp PAUSE_BREAK  &trans    &trans  &kp INS        &kp HOME           &kp PAGE_DOWN      &kp PAGE_UP          &kp END          &kp CAPSLOCK
-                                &trans       &trans  &trans           &trans           &trans    &trans  &kp BACKSPACE  &kp DELETE         &trans             &trans
+&caret_dual  &code_not_equals  &quote_dual  &trans  &trans           &trans                             &code_and      &brace_open_close  &paren_open_close  &bracket_open_close  &code_equals     &kp DELETE
+&trans       &paste_quoted     &trans       &trans  &trans           &kp PRINTSCREEN                    &kp K_REDO     &kp K_PASTE        &kp K_COPY         &kp K_CUT            &kp K_UNDO       &kp DE_U_UMLAUT
+&code_or     &trans            &trans       &trans  &trans           &kp SCROLLLOCK                     &caps_word     &kp LEFT           &kp DOWN           &kp UP               &kp RIGHT_ARROW  &kp DE_A_UMLAUT
+&trans       &trans            &trans       &trans  &paste_modified  &kp PAUSE_BREAK  &trans    &trans  &kp INS        &kp HOME           &kp PAGE_DOWN      &kp PAGE_UP          &kp END          &trans
+                               &trans       &trans  &trans           &trans           &trans    &trans  &kp BACKSPACE  &kp DELETE         &trans             &trans
             >;
 
             sensor-bindings =
