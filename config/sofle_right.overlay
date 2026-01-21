@@ -12,7 +12,8 @@
 };
 */
 
-&kscan0 {
+/ {
+kscan0: kscan0 {
     row-gpios
             = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
               /* [RA] override blown "&pro_micro 6" aka 100 aka D6 P1.00 pin with 101 aka P1.01.
@@ -32,7 +33,10 @@
         , <&pro_micro 19 GPIO_ACTIVE_HIGH>
         ;
 };
+};
 
+/*
 &right_encoder {
     status = "okay";
 };
+*/
