@@ -50,16 +50,6 @@
             bindings = <&kp F12>;
             key-positions = <10 11>;
         };
-
-        gui-left {
-            bindings = <&kp RG(LEFT)>;
-            key-positions = <51 31>;
-        };
-
-        gui-right {
-            bindings = <&kp RG(RIGHT)>;
-            key-positions = <51 34>;
-        };
     };
 
     macros {
