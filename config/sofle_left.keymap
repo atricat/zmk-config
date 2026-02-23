@@ -21,6 +21,10 @@
 #define RAISE 2
 #define ADJUST 3
 
+&caps_word {
+    continue-list = <DE_UNDERSCORE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>;
+};
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
