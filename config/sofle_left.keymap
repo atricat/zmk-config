@@ -21,9 +21,7 @@
 #define RAISE 2
 #define ADJUST 3
 
-&caps_word {
-    continue-list = <DE_UNDERSCORE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>;
-};
+&caps_word { continue-list = <DE_UNDERSCORE DE_A_UMLAUT DE_O_UMLAUT DE_U_UMLAUT>; };
 
 / {
     conditional_layers {
@@ -178,8 +176,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp PAGE_UP PAGE_DOWN>,
-                <&inc_dec_kp (LS(LC(RIGHT))) LS(LC(LEFT_ARROW))>;
+                <&inc_dec_kp (LS(LC(RIGHT_ARROW))) LS(LC(LEFT_ARROW))>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         lower_layer {
@@ -202,8 +200,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp PAGE_UP PAGE_DOWN>,
-                <&inc_dec_kp (LS(RIGHT)) LS(LEFT_ARROW)>;
+                <&inc_dec_kp (LS(RIGHT)) LS(LEFT)>,
+                <&inc_dec_kp HOME END>;
         };
 
         raise_layer {
@@ -225,8 +223,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp (LC(RIGHT)) LC(LEFT_ARROW)>;
+                <&inc_dec_kp (LC(RIGHT)) LC(LEFT)>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         adjust_layer {
