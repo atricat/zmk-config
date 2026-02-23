@@ -50,6 +50,21 @@
             bindings = <&kp F12>;
             key-positions = <10 11>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <56 57>;
+        };
+
+        c-v-muscle {
+            bindings = <&kp C>;
+            key-positions = <39 40>;
+        };
+
+        v-b-muscle {
+            bindings = <&kp V>;
+            key-positions = <40 41>;
+        };
     };
 
     macros {
