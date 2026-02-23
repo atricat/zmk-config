@@ -190,7 +190,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp (LS(LC(RIGHT_ARROW))) LS(LC(LEFT_ARROW))>,
+                <&inc_dec_kp (LC(RIGHT_ARROW)) LC(LEFT_ARROW)>,
                 <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
@@ -214,7 +214,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp (LS(RIGHT)) LS(LEFT)>,
+                <&inc_dec_kp (LS(LC(RIGHT))) LS(LC(LEFT))>,
                 <&inc_dec_kp HOME END>;
         };
 
@@ -237,7 +237,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp (LC(RIGHT)) LC(LEFT)>,
+                <&inc_dec_kp (LS(RIGHT)) LS(LEFT)>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
