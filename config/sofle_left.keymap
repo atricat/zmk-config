@@ -152,6 +152,15 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
         };
+
+        mt_repeat: mt_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced"; // Use "balanced" or "tap-preferred" if you prefer
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;      // Enable auto-repeat if tapped/held within 200ms
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
