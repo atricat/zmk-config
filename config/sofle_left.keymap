@@ -148,7 +148,7 @@
         paste_modified: paste_modified {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(C)>, <&macro_wait_time 200>, <&kp K_PASTE>;
+            bindings = <&kp LG(C)>, <&macro_wait_time 200>, <&kp LS(INS)>;
 
             label = "PASTE_MODIFIED";
         };
@@ -156,7 +156,7 @@
         paste_quoted: paste_quoted {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(Q)>, <&macro_wait_time 200>, <&kp K_PASTE>;
+            bindings = <&kp LG(Q)>, <&macro_wait_time 200>, <&kp LS(INS)>;
 
             label = "PASTE_QUOTED";
         };
@@ -164,7 +164,11 @@
         bluetooth_disconnect: bluetooth_disconnect {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_USB &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings =
+                <&out OUT_USB>,
+                <&macro_wait_time 200>,
+                <&bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+
             label = "BLUETOOTH_DISCONNECT";
         };
 
