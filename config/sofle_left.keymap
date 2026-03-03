@@ -158,7 +158,11 @@
         paste_modified: paste_modified {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(C)>, <&macro_wait_time 1000>, <&kp LS(INS)>;
+            bindings =
+                <&macro_pause_for_release>,
+                <&kp LG(C)>,
+                <&macro_wait_time 1000>,
+                <&kp LC(V)>;
 
             label = "PASTE_MODIFIED";
         };
@@ -166,7 +170,11 @@
         paste_quoted: paste_quoted {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(Q)>, <&macro_wait_time 1000>, <&kp LS(INS)>;
+            bindings =
+                <&macro_pause_for_release>,
+                <&kp LG(Q)>,
+                <&macro_wait_time 1000>,
+                <&kp LC(V)>;
 
             label = "PASTE_QUOTED";
         };
