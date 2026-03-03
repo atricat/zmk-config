@@ -160,9 +160,8 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_pause_for_release>,
-                <&kp LG(C)>,
                 <&macro_wait_time 1000>,
-                <&kp LC(V)>;
+                <&kp LG(C) &kp LC(V)>;
 
             label = "PASTE_MODIFIED";
         };
@@ -172,9 +171,8 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_pause_for_release>,
-                <&kp LG(Q)>,
                 <&macro_wait_time 1000>,
-                <&kp LC(V)>;
+                <&kp LG(Q) &kp LC(V)>;
 
             label = "PASTE_QUOTED";
         };
