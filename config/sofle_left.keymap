@@ -191,6 +191,20 @@
             bindings = <&kp RC(BACKSPACE) &kp LA(BACKSPACE)>;
             label = "WORD_BACKSPACE";
         };
+
+        apos_dual: apos_dual {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DE_SINGLE_QUOTE &kp DE_SINGLE_QUOTE &kp LEFT>;
+            label = "APOS_DUAL";
+        };
+
+        c_comment: c_comment {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp FSLH &kp SPACE>;
+            label = "C_COMMENT";
+        };
     };
 
     behaviors {
@@ -261,8 +275,8 @@
 
             bindings = <
 &caret_dual  &code_not_equals  &quote_dual  &trans  &trans           &trans                             &code_and         &brace_open_close  &paren_open_close  &bracket_open_close  &code_equals     &kp DELETE
-&trans       &paste_quoted     &trans       &trans  &trans           &kp PRINTSCREEN                    &kp LS(LC(DE_Z))  &kp LS(INS)        &kp LC(INS)        &kp LS(DELETE)       &kp LC(DE_Z)     &kp DE_ACUTE
-&code_or     &trans            &trans       &trans  &trans           &kp SCROLLLOCK                     &caps_word        &kp LEFT           &kp DOWN           &kp UP               &kp RIGHT_ARROW  &kp DE_A_UMLAUT
+&c_comment   &paste_quoted     &trans       &trans  &trans           &kp PRINTSCREEN                    &kp LS(LC(DE_Z))  &kp LS(INS)        &kp LC(INS)        &kp LS(DELETE)       &kp LC(DE_Z)     &kp DE_ACUTE
+&code_or     &trans            &trans       &trans  &trans           &kp SCROLLLOCK                     &caps_word        &kp LEFT           &kp DOWN           &kp UP               &kp RIGHT_ARROW  &apos_dual
 &trans       &trans            &trans       &trans  &paste_modified  &kp PAUSE_BREAK  &trans    &trans  &kp INS           &kp HOME           &kp PAGE_DOWN      &kp PAGE_UP          &kp END          &trans
                                &trans       &trans  &trans           &trans           &trans    &trans  &kp BACKSPACE     &kp DELETE         &trans             &trans
             >;
