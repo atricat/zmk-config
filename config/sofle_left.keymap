@@ -202,7 +202,7 @@
         c_comment: c_comment {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp FSLH &kp FSLH &kp SPACE>;
+            bindings = <&kp DE_SLASH &kp DE_SLASH &kp SPACE>;
             label = "C_COMMENT";
         };
     };
