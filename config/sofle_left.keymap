@@ -238,34 +238,31 @@
         gui_j: gui_j {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp J>, <&kp LEFT>;
+            bindings = <&kp J>, <&kp RG(LEFT)>;
 
             mods = <(MOD_LGUI|MOD_RGUI)>;
-            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
         gui_k: gui_k {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp K>, <&kp DOWN>;
+            bindings = <&kp K>, <&kp RG(DOWN)>;
 
             mods = <(MOD_LGUI|MOD_RGUI)>;
-            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
         gui_l: gui_l {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp L>, <&kp RIGHT>;
+            bindings = <&kp L>, <&kp RG(RIGHT)>;
 
             mods = <(MOD_LGUI|MOD_RGUI)>;
-            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
         gui_i: gui_i {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp I>, <&kp UP>;
+            bindings = <&kp I>, <&kp RG(UP)>;
 
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
