@@ -71,8 +71,8 @@
             key-positions = <0 1 53 54>;
         };
 
-        toggle_1 {
-            bindings = <&tog 1>;
+        toggle_2 {
+            bindings = <&tog 2>;
             key-positions = <57 58 59>;
         };
     };
