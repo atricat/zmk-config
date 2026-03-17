@@ -241,6 +241,7 @@
             bindings = <&kp J>, <&kp LEFT>;
 
             mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
         gui_k: gui_k {
@@ -249,6 +250,7 @@
             bindings = <&kp K>, <&kp DOWN>;
 
             mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
         gui_l: gui_l {
@@ -257,6 +259,7 @@
             bindings = <&kp L>, <&kp RIGHT>;
 
             mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
         gui_i: gui_i {
