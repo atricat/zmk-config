@@ -240,7 +240,8 @@
             #binding-cells = <0>;
             bindings = <&kp J>, <&kp RG(LEFT)>;
 
-            mods = <(MOD_LGUI|MOD_RGUI)>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
         };
 
         gui_k: gui_k {
@@ -248,7 +249,8 @@
             #binding-cells = <0>;
             bindings = <&kp K>, <&kp RG(DOWN)>;
 
-            mods = <(MOD_LGUI|MOD_RGUI)>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
         };
 
         gui_l: gui_l {
@@ -256,7 +258,8 @@
             #binding-cells = <0>;
             bindings = <&kp L>, <&kp RG(RIGHT)>;
 
-            mods = <(MOD_LGUI|MOD_RGUI)>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
         };
 
         gui_i: gui_i {
@@ -264,7 +267,8 @@
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp RG(UP)>;
 
-            mods = <(MOD_LGUI|MOD_RGUI)>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
         };
     };
 
