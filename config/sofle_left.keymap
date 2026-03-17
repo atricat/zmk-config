@@ -36,11 +36,6 @@
     combos {
         compatible = "zmk,combos";
 
-        caps_lock {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <36 49>;
-        };
-
         studio_unlock {
             bindings = <&studio_unlock>;
             key-positions = <53 54 48 49>;
@@ -49,11 +44,6 @@
         f12 {
             bindings = <&kp F12>;
             key-positions = <10 11>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <56 57>;
         };
 
         c-v-muscle {
