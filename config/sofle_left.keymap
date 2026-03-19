@@ -199,7 +199,7 @@
         home_dir: home_dir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SPACE &kp DE_TILDE &kp FSLH>;
+            bindings = <&kp SPACE &kp DE_TILDE &kp DE_SLASH>;
             label = "HOME_DIR";
         };
     };
