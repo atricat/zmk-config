@@ -340,11 +340,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp DE_CARET  &kp F1          &kp F2           &kp F3          &kp F4           &kp F5                                &kp F6     &kp F7        &kp F8        &kp F9         &kp F10         &kp F11
-&trans        &msc SCRL_DOWN  &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &kp PRINTSCREEN                       &kp PG_UP  &kp RC(HOME)  &kp RC(UP)    &kp RC(END)    &msc SCRL_DOWN  &kp F12
-&trans        &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp SCROLLLOCK                        &kp PG_DN  &kp RC(LEFT)  &kp RC(DOWN)  &kp RC(RIGHT)  &msc SCRL_UP    &trans
-&trans        &trans          &trans           &trans          &trans           &kp PAUSE_BREAK  &trans    &trans     &kp CAPS   &kp LS(INS)   &kp LC(INS)   &kp LS(DEL)    &trans          &trans
-                              &trans           &trans          &trans           &trans           &trans    &mkp RCLK  &mkp LCLK  &mkp MCLK     &trans        &trans
+&kp DE_CARET  &kp F1          &kp F2           &kp F3          &kp F4           &kp F5                                  &kp F6             &kp F7        &kp F8        &kp F9         &kp F10         &kp F11
+&trans        &msc SCRL_DOWN  &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &kp PRINTSCREEN                         &kp PG_UP          &kp RC(HOME)  &kp RC(UP)    &kp RC(END)    &msc SCRL_DOWN  &kp F12
+&trans        &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp SCROLLLOCK                          &kp PG_DN          &kp RC(LEFT)  &kp RC(DOWN)  &kp RC(RIGHT)  &msc SCRL_UP    &trans
+&trans        &mkp MB4        &mkp LCLK        &mkp MCLK       &mkp RCLK        &kp PAUSE_BREAK  &trans    &trans       &kp CAPS           &kp LS(INS)   &kp LC(INS)   &kp LS(DEL)    &trans          &trans
+                              &trans           &trans          &trans           &trans           &trans    &kp RC(RET)  &kp RC(BACKSPACE)  &kp RC(DEL)   &trans        &trans
             >;
 
             sensor-bindings =
