@@ -165,16 +165,9 @@
         bluetooth_disconnect: bluetooth_disconnect {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4>, <&macro_wait_time 200>, <&out OUT_USB>;
+            bindings = <&macro_wait_time 500>, <&bt BT_SEL 4 &out OUT_USB>;
 
             label = "BLUETOOTH_DISCONNECT";
-        };
-
-        word_backspace: word_backspace {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RC(BACKSPACE) &kp LA(BACKSPACE)>;
-            label = "WORD_BACKSPACE";
         };
 
         apos_dual: apos_dual {
