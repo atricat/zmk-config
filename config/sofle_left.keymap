@@ -212,14 +212,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        layer_word_backspace: layer_word_backspace {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&word_backspace>;
-        };
-
         gui_j: gui_j {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
