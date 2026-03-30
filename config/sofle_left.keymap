@@ -216,7 +216,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
-            retro-tap;
+            // Output tap no matter how long held: retro-tap;
             bindings = <&mo>, <&kp>;
         };
 
