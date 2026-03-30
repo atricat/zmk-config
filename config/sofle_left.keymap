@@ -41,11 +41,6 @@
             key-positions = <53 54 48 49>;
         };
 
-        f12 {
-            bindings = <&kp F12>;
-            key-positions = <10 11>;
-        };
-
         c-v-muscle {
             bindings = <&kp C>;
             key-positions = <39 40>;
@@ -64,6 +59,66 @@
         tog_lower {
             bindings = <&tog 2>;
             key-positions = <59 58 57>;
+        };
+
+        f1 {
+            bindings = <&kp F1>;
+            key-positions = <1 13>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <2 14>;
+        };
+
+        f3 {
+            bindings = <&kp F3>;
+            key-positions = <3 15>;
+        };
+
+        f4 {
+            bindings = <&kp F4>;
+            key-positions = <4 16>;
+        };
+
+        f5 {
+            bindings = <&kp F5>;
+            key-positions = <5 17>;
+        };
+
+        f6 {
+            bindings = <&kp F6>;
+            key-positions = <6 18>;
+        };
+
+        f7 {
+            bindings = <&kp F7>;
+            key-positions = <7 19>;
+        };
+
+        f8 {
+            bindings = <&kp F8>;
+            key-positions = <8 20>;
+        };
+
+        f9 {
+            bindings = <&kp F9>;
+            key-positions = <9 21>;
+        };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <10 22>;
+        };
+
+        f11 {
+            bindings = <&kp F11>;
+            key-positions = <11 23>;
+        };
+
+        f12 {
+            bindings = <&kp F12>;
+            key-positions = <10 11>;
         };
     };
 
