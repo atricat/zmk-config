@@ -208,13 +208,15 @@
             tapping-term-ms = <200>;
         };
 
-        mt_repeat: mt_repeat {
+        // &lt but quick-tap triggers the tap auto-repeat behaviour.
+
+        lt_repeat: lt_repeat {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced"; // Use "balanced" or "tap-preferred" if you prefer
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <200>;      // Enable auto-repeat if tapped/held within 200ms
-            bindings = <&kp>, <&kp>;
+            quick-tap-ms = <200>;
+            bindings = <&mo>, <&kp>;
         };
 
         gui_j: gui_j {
@@ -268,11 +270,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&mtp DE_CARET ESC                 &mtp LS(N1) N1  &mtp LS(N2) N2  &mtp LS(N3) N3  &mtp LS(N4) N4  &mtp LS(N5) N5                                              &mtp LS(N6) N6  &mtp LS(N7) N7  &mtp LS(N8) N8  &mtp LS(N9) N9  &mtp LS(N0) N0          &mtp LS(DE_SHARP_S) DE_SHARP_S
-&kp TAB                           &kp Q           &kp W           &kp E           &kp R           &kp T                                                       &kp DE_Z        &kp U           &gui_i          &kp O           &kp P                   &mt DE_U_UMLAUT DE_PLUS
-&mt DE_GREATER_THAN DE_LESS_THAN  &kp A           &kp S           &kp D           &kp F           &kp G                                                       &kp H           &gui_j          &gui_k          &gui_l          &mt DE_O_UMLAUT DELETE  &mt DE_A_UMLAUT DE_HASH
-&kp LSHFT                         &kp DE_Y        &kp X           &kp C           &kp V           &kp B            &bt BT_NXT               &kp C_PLAY_PAUSE  &kp N           &kp M           &kp DE_COMMA    &kp DE_PERIOD   &kp DE_MINUS            &kp RSHFT
-                                                  &kp LCTRL       &kp LGUI        &kp LALT        &lt 2 BACKSPACE  &lt (3) LC(BACKSPACE)    &kp RET           &kp SPACE       &kp RALT        &lt 2 K_APP     &kp RCTRL
+&mtp DE_CARET ESC                 &mtp LS(N1) N1  &mtp LS(N2) N2  &mtp LS(N3) N3  &mtp LS(N4) N4  &mtp LS(N5) N5                                                            &mtp LS(N6) N6      &mtp LS(N7) N7  &mtp LS(N8) N8  &mtp LS(N9) N9  &mtp LS(N0) N0          &mtp LS(DE_SHARP_S) DE_SHARP_S
+&kp TAB                           &kp Q           &kp W           &kp E           &kp R           &kp T                                                                     &kp DE_Z            &kp U           &gui_i          &kp O           &kp P                   &mt DE_U_UMLAUT DE_PLUS
+&mt DE_GREATER_THAN DE_LESS_THAN  &kp A           &kp S           &kp D           &kp F           &kp G                                                                     &kp H               &gui_j          &gui_k          &gui_l          &mt DE_O_UMLAUT DELETE  &mt DE_A_UMLAUT DE_HASH
+&kp LSHFT                         &kp DE_Y        &kp X           &kp C           &kp V           &kp B                   &bt BT_NXT                      &kp C_PLAY_PAUSE  &kp N               &kp M           &kp DE_COMMA    &kp DE_PERIOD   &kp DE_MINUS            &kp RSHFT
+                                                  &kp LCTRL       &kp LGUI        &kp LALT        &lt_repeat 2 BACKSPACE  &lt_repeat (3) LC(BACKSPACE)    &lt_repeat 3 RET  &lt_repeat 2 SPACE  &kp RALT        &kp K_APP       &kp RCTRL
             >;
 
             sensor-bindings =
