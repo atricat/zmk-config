@@ -367,11 +367,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&caret_dual  &code_not_equals  &quote_dual        &trans            &trans             &trans                             &code_and   &brace_open_close  &paren_open_close  &bracket_open_close  &code_equals    &kp INS
-&c_comment   &paste_quoted     &kp RS(RC(PG_UP))  &kp RC(RS(DE_Z))  &kp RS(RC(PG_DN))  &kp PRINTSCREEN                    &kp PG_UP   &kp HOME           &kp UP             &kp END              &msc SCRL_DOWN  &kp DE_ACUTE
-&code_or     &trans            &kp RC(PG_UP)      &kp RC(DE_Z)      &kp RC(PG_DN)      &kp SCROLLLOCK                     &kp PG_DN   &kp LEFT           &kp DOWN           &kp RIGHT            &msc SCRL_UP    &apos_dual
-&trans       &trans            &kp RG(PG_UP)      &paste_modified   &kp RG(PG_DN)      &kp PAUSE_BREAK  &trans    &trans  &caps_word  &kp LS(INS)        &kp LC(INS)        &kp LS(DEL)          &home_dir       &trans
-                               &trans             &trans            &trans             &trans           &trans    &trans  &trans      &trans             &trans             &trans
+&caret_dual  &code_not_equals  &quote_dual        &trans            &trans             &trans                                              &code_and   &brace_open_close  &paren_open_close  &bracket_open_close  &code_equals    &kp INS
+&c_comment   &paste_quoted     &kp RS(RC(PG_UP))  &kp RC(RS(DE_Z))  &kp RS(RC(PG_DN))  &kp PRINTSCREEN                                     &kp PG_UP   &kp HOME           &kp UP             &kp END              &msc SCRL_DOWN  &kp DE_ACUTE
+&code_or     &trans            &kp RC(PG_UP)      &kp RC(DE_Z)      &kp RC(PG_DN)      &kp SCROLLLOCK                                      &kp PG_DN   &kp LEFT           &kp DOWN           &kp RIGHT            &msc SCRL_UP    &apos_dual
+&trans       &trans            &kp RG(PG_UP)      &paste_modified   &kp RG(PG_DN)      &kp PAUSE_BREAK   &trans                    &trans  &caps_word  &kp LS(INS)        &kp LC(INS)        &kp LS(DEL)          &home_dir       &trans
+                               &trans             &trans            &trans             &lt_repeat 2 DEL  &lt_repeat (3) RC(DEL)    &trans  &trans      &trans             &trans             &trans
             >;
 
             sensor-bindings =
