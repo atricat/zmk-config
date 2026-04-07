@@ -317,6 +317,16 @@
             mods = <(MOD_LGUI)>;
             keep-mods = <(MOD_LGUI)>;
         };
+
+        qmark_sharps: qmark_sharps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QMARK_SHARPS";
+            bindings = <&mtp DE_SHARP_S DE_QUESTION>, <&kp DE_SHARP_S>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+        };
     };
 
     keymap {
@@ -333,7 +343,7 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&mtp DE_CARET ESC                 &mtp LS(N1) N1  &mtp LS(N2) N2  &mtp LS(N3) N3  &mtp LS(N4) N4  &mtp LS(N5) N5                                                            &mtp LS(N6) N6      &mtp LS(N7) N7  &mtp LS(N8) N8  &mtp LS(N9) N9  &mtp LS(N0) N0           &mtp (DE_SHARP_S) RS(DE_SHARP_S)
+&mtp DE_CARET ESC                 &mtp LS(N1) N1  &mtp LS(N2) N2  &mtp LS(N3) N3  &mtp LS(N4) N4  &mtp LS(N5) N5                                                            &mtp LS(N6) N6      &mtp LS(N7) N7  &mtp LS(N8) N8  &mtp LS(N9) N9  &mtp LS(N0) N0           &qmark_sharps
 &kp TAB                           &kp Q           &kp W           &kp E           &kp R           &kp T                                                                     &kp DE_Z            &kp U           &gui_i          &kp O           &kp P                    &mtp DE_U_UMLAUT DE_PLUS
 &mt DE_GREATER_THAN DE_LESS_THAN  &kp A           &kp S           &kp D           &kp F           &kp G                                                                     &kp H               &gui_j          &gui_k          &gui_l          &mtp DE_O_UMLAUT DELETE  &mtp DE_A_UMLAUT DE_HASH
 &kp LSHFT                         &kp DE_Y        &kp X           &kp C           &kp V           &kp B                   &bt BT_NXT                      &kp C_PLAY_PAUSE  &kp N               &kp M           &kp DE_COMMA    &kp DE_PERIOD   &kp DE_MINUS             &kp RSHFT
