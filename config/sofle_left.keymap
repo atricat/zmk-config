@@ -367,11 +367,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&caret_dual  &code_not_equals  &quote_dual        &trans            &trans             &trans                             &code_and      &brace_open_close  &paren_open_close  &bracket_open_close  &code_equals    &kp INS
-&c_comment   &paste_quoted     &kp RS(RC(PG_UP))  &kp RC(RS(DE_Z))  &kp RS(RC(PG_DN))  &kp PRINTSCREEN                    &kp PG_UP      &kp HOME           &kp UP             &kp END              &msc SCRL_DOWN  &kp DE_ACUTE
-&code_or     &trans            &kp RC(PG_UP)      &kp RC(DE_Z)      &kp RC(PG_DN)      &kp SCROLLLOCK                     &kp PG_DN      &kp LEFT           &kp DOWN           &kp RIGHT            &msc SCRL_UP    &apos_dual
-&trans       &trans            &kp RG(PG_UP)      &paste_modified   &kp RG(PG_DN)      &kp PAUSE_BREAK  &trans    &trans  &caps_word     &kp LS(INS)        &kp LC(INS)        &kp LS(DEL)          &home_dir       &trans
-                               &trans             &trans            &trans             &trans           &trans    &trans  &kp BACKSPACE  &kp DELETE         &trans             &trans
+&caret_dual  &code_not_equals  &quote_dual        &trans            &trans             &trans                             &code_and   &brace_open_close  &paren_open_close  &bracket_open_close  &code_equals    &kp INS
+&c_comment   &paste_quoted     &kp RS(RC(PG_UP))  &kp RC(RS(DE_Z))  &kp RS(RC(PG_DN))  &kp PRINTSCREEN                    &kp PG_UP   &kp HOME           &kp UP             &kp END              &msc SCRL_DOWN  &kp DE_ACUTE
+&code_or     &trans            &kp RC(PG_UP)      &kp RC(DE_Z)      &kp RC(PG_DN)      &kp SCROLLLOCK                     &kp PG_DN   &kp LEFT           &kp DOWN           &kp RIGHT            &msc SCRL_UP    &apos_dual
+&trans       &trans            &kp RG(PG_UP)      &paste_modified   &kp RG(PG_DN)      &kp PAUSE_BREAK  &trans    &trans  &caps_word  &kp LS(INS)        &kp LC(INS)        &kp LS(DEL)          &home_dir       &trans
+                               &trans             &trans            &trans             &trans           &trans    &trans  &trans      &trans             &trans             &trans
             >;
 
             sensor-bindings =
@@ -390,11 +390,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp DE_CARET  &kp F1          &kp F2           &kp F3          &kp F4           &kp F5                                  &kp F6                        &kp F7         &kp F8         &kp F9         &kp F10         &kp F11
-&trans        &msc SCRL_DOWN  &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &kp PRINTSCREEN                         &kp PG_UP                     &kp RC(HOME)   &kp RC(UP)     &kp RC(END)    &msc SCRL_DOWN  &kp F12
-&trans        &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp SCROLLLOCK                          &kp PG_DN                     &kp RC(LEFT)   &kp RC(DOWN)   &kp RC(RIGHT)  &msc SCRL_UP    &trans
-&trans        &mkp MB4        &mkp LCLK        &mkp MCLK       &mkp RCLK        &kp PAUSE_BREAK  &trans    &trans       &kp CAPS                      &kp RS(RC(V))  &kp RC(RS(C))  &kp RC(X)      &trans          &trans
-                              &trans           &trans          &trans           &trans           &trans    &kp RC(RET)  &lt_repeat (2) RC(BACKSPACE)  &kp RC(DEL)    &trans         &trans
+&kp DE_CARET  &kp F1          &kp F2           &kp F3          &kp F4           &kp F5                                             &kp F6                    &kp F7         &kp F8         &kp F9         &kp F10         &kp F11
+&trans        &msc SCRL_DOWN  &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &kp PRINTSCREEN                                    &kp PG_UP                 &kp RC(HOME)   &kp RC(UP)     &kp RC(END)    &msc SCRL_DOWN  &kp F12
+&trans        &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp SCROLLLOCK                                     &kp PG_DN                 &kp RC(LEFT)   &kp RC(DOWN)   &kp RC(RIGHT)  &msc SCRL_UP    &trans
+&trans        &mkp MB4        &mkp LCLK        &mkp MCLK       &mkp RCLK        &kp PAUSE_BREAK  &trans    &trans                  &kp CAPS                  &kp RS(RC(V))  &kp RC(RS(C))  &kp RC(X)      &trans          &trans
+                              &trans           &trans          &trans           &trans           &trans    &lt_repeat (3) RC(RET)  &lt_repeat (2) RC(SPACE)  &trans         &trans         &trans
             >;
 
             sensor-bindings =
