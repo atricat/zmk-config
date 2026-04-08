@@ -357,7 +357,7 @@
 
         german_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans                   &kp DE_SHARP_S
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans                   &mtp DE_QUESTION DE_SHARP_S
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans                   &mtp DE_PLUS DE_U_UMLAUT
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &mtp DELETE DE_O_UMLAUT  &mtp DE_HASH DE_A_UMLAUT
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                   &trans
