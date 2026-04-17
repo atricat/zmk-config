@@ -318,6 +318,42 @@
             keep-mods = <(MOD_LGUI)>;
         };
 
+        gui_w: gui_w {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp W>, <&kp RG(RS(PAGE_UP))>;
+
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+
+        gui_r: gui_r {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp RG(RS(PAGE_DOWN))>;
+
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+
+        gui_s: gui_s {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp S>, <&kp RG(PAGE_UP)>;
+
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+
+        gui_f: gui_f {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp RG(PAGE_DOWN)>;
+
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+
         qmark_sharps: qmark_sharps {
             compatible = "zmk,behavior-mod-morph";
             label = "QMARK_SHARPS";
@@ -344,8 +380,8 @@
 
             bindings = <
 &mtp DE_CARET ESC                 &mtp LS(N1) N1  &mtp LS(N2) N2  &mtp LS(N3) N3  &mtp LS(N4) N4  &mtp LS(N5) N5                                                            &mtp LS(N6) N6      &mtp LS(N7) N7  &mtp LS(N8) N8  &mtp LS(N9) N9  &mtp LS(N0) N0           &qmark_sharps
-&kp TAB                           &kp Q           &kp W           &kp E           &kp R           &kp T                                                                     &kp DE_Z            &kp U           &gui_i          &kp O           &kp P                    &mtp DE_U_UMLAUT DE_PLUS
-&mt DE_GREATER_THAN DE_LESS_THAN  &kp A           &kp S           &kp D           &kp F           &kp G                                                                     &kp H               &gui_j          &gui_k          &gui_l          &mtp DE_O_UMLAUT DELETE  &mtp DE_A_UMLAUT DE_HASH
+&kp TAB                           &kp Q           &gui_w          &kp E           &gui_r          &kp T                                                                     &kp DE_Z            &kp U           &gui_i          &kp O           &kp P                    &mtp DE_U_UMLAUT DE_PLUS
+&mt DE_GREATER_THAN DE_LESS_THAN  &kp A           &gui_s          &kp D           &gui_f          &kp G                                                                     &kp H               &gui_j          &gui_k          &gui_l          &mtp DE_O_UMLAUT DELETE  &mtp DE_A_UMLAUT DE_HASH
 &kp LSHFT                         &kp DE_Y        &kp X           &kp C           &kp V           &kp B                   &bt BT_NXT                      &kp C_PLAY_PAUSE  &kp N               &kp M           &kp DE_COMMA    &kp DE_PERIOD   &kp DE_MINUS             &kp RSHFT
                                                   &kp LCTRL       &kp LGUI        &kp LALT        &lt_repeat 2 BACKSPACE  &lt_repeat (3) LC(BACKSPACE)    &lt_repeat 3 RET  &lt_repeat 2 SPACE  &kp RALT        &kp K_APP       &kp RCTRL
             >;
