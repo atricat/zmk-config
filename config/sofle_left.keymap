@@ -125,6 +125,76 @@
             bindings = <&kp F12>;
             key-positions = <10 11>;
         };
+
+        s1 {
+            bindings = <&kp RS(N1)>;
+            key-positions = <25 13>;
+        };
+
+        s2 {
+            bindings = <&kp RS(N2)>;
+            key-positions = <14 26>;
+        };
+
+        s3 {
+            bindings = <&kp RS(N3)>;
+            key-positions = <15 27>;
+        };
+
+        s4 {
+            bindings = <&kp RS(N4)>;
+            key-positions = <16 28>;
+        };
+
+        s5 {
+            bindings = <&kp RS(N5)>;
+            key-positions = <17 29>;
+        };
+
+        s6 {
+            bindings = <&kp RS(N6)>;
+            key-positions = <18 30>;
+        };
+
+        s7 {
+            bindings = <&kp RS(N7)>;
+            key-positions = <19 31>;
+        };
+
+        s8 {
+            bindings = <&kp RS(N8)>;
+            key-positions = <20 32>;
+        };
+
+        s9 {
+            bindings = <&kp RS(N9)>;
+            key-positions = <21 33>;
+        };
+
+        s0 {
+            bindings = <&kp RS(N0)>;
+            key-positions = <22 34>;
+        };
+
+        a7 {
+            bindings = <&kp DE_LBRC>;
+            key-positions = <31 45>;
+        };
+
+        a8 {
+            bindings = <&kp DE_LBKT>;
+            key-positions = <32 46>;
+        };
+
+        a9 {
+            bindings = <&kp DE_RBKT>;
+            key-positions = <47 33>;
+        };
+
+        a0 {
+            bindings = <&kp DE_RBRC>;
+            key-positions = <48 34>;
+        };
     };
 
     macros {
