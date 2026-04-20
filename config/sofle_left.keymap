@@ -126,6 +126,11 @@
             key-positions = <10 11>;
         };
 
+        sgreaterthan {
+            bindings = <&kp DE_GT>;
+            key-positions = <24 12>;
+        };
+
         s1 {
             bindings = <&kp RS(N1)>;
             key-positions = <25 13>;
@@ -179,6 +184,11 @@
         sqmark {
             bindings = <&kp DE_QUESTION>;
             key-positions = <23 35>;
+        };
+
+        apipe {
+            bindings = <&kp DE_PIPE>;
+            key-positions = <36 24>;
         };
 
         a7 {
