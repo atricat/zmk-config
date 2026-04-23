@@ -41,16 +41,6 @@
             key-positions = <53 54 48 49>;
         };
 
-        c-v-muscle {
-            bindings = <&kp C>;
-            key-positions = <39 40>;
-        };
-
-        v-b-muscle {
-            bindings = <&kp V>;
-            key-positions = <40 41>;
-        };
-
         soft_off {
             bindings = <&soft_off>;
             key-positions = <0 1 53 54>;
@@ -64,6 +54,11 @@
         tog_lower {
             bindings = <&tog 2>;
             key-positions = <31 32 33>;
+        };
+
+        fcaret {
+            bindings = <&caret_dual>;
+            key-positions = <0 12>;
         };
 
         f1 {
