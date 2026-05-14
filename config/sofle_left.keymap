@@ -210,6 +210,21 @@
             bindings = <&kp DE_BSLH>;
             key-positions = <49 35>;
         };
+
+        typo_xc {
+            bindings = <&kp X>;
+            key-positions = <38 39>;
+        };
+
+        typo_cv {
+            bindings = <&kp C>;
+            key-positions = <39 40>;
+        };
+
+        typo_vb {
+            bindings = <&kp V>;
+            key-positions = <41 40>;
+        };
     };
 
     macros {
