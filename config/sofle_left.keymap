@@ -245,6 +245,16 @@
             bindings = <&kp RC(V)>;
             key-positions = <52 40>;
         };
+
+        auto_nav1 {
+            bindings = <&nav_word 2>;
+            key-positions = <31 32>;
+        };
+
+        auto_nav2 {
+            bindings = <&nav_word 2>;
+            key-positions = <32 33>;
+        };
     };
 
     macros {
@@ -385,6 +395,13 @@
     };
 
     behaviors {
+        nav_word: nav_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP HOME END RET>;
+            ignore-modifiers;
+        };
+
         mtp: mod_tap_preferred {
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP_PREFERRED";
