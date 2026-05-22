@@ -247,12 +247,12 @@
         };
 
         auto_nav1 {
-            bindings = <&nav_word 2>;
+            bindings = <&nav_word 5>;
             key-positions = <31 32>;
         };
 
         auto_nav2 {
-            bindings = <&nav_word 2>;
+            bindings = <&nav_word 5>;
             key-positions = <32 33>;
         };
     };
@@ -612,6 +612,17 @@
             sensor-bindings =
                 <&inc_dec_kp C_REWIND C_FAST_FORWARD>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        nav_layer {
+            display-name = "nav";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans     &trans    &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp PG_UP  &kp HOME  &kp UP    &kp END    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans    &trans    &trans     &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans    &trans    &trans
+            >;
         };
     };
 };
