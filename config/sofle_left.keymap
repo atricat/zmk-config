@@ -51,8 +51,8 @@
             key-positions = <34 35>;
         };
 
-        tog_lower {
-            bindings = <&tog 2>;
+        nav_word {
+            bindings = <&nav_word 5>;
             key-positions = <31 32 33>;
         };
 
@@ -244,16 +244,6 @@
         ctrl_v {
             bindings = <&kp RC(V)>;
             key-positions = <52 40>;
-        };
-
-        auto_nav1 {
-            bindings = <&nav_word 5>;
-            key-positions = <31 32>;
-        };
-
-        auto_nav2 {
-            bindings = <&nav_word 5>;
-            key-positions = <32 33>;
         };
     };
 
