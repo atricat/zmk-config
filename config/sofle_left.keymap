@@ -225,6 +225,26 @@
             bindings = <&kp V>;
             key-positions = <41 40>;
         };
+
+        ctrl_a {
+            bindings = <&kp RC(A)>;
+            key-positions = <25 37>;
+        };
+
+        ctrl_x {
+            bindings = <&kp RC(DE_X)>;
+            key-positions = <50 38>;
+        };
+
+        ctrl_c {
+            bindings = <&kp RC(C)>;
+            key-positions = <51 39>;
+        };
+
+        ctrl_v {
+            bindings = <&kp RC(V)>;
+            key-positions = <52 40>;
+        };
     };
 
     macros {
