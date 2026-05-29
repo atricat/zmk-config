@@ -39,176 +39,212 @@
         studio_unlock {
             bindings = <&studio_unlock>;
             key-positions = <53 54 48 49>;
+            require-prior-idle-ms = <200>;
         };
 
         soft_off {
             bindings = <&soft_off>;
             key-positions = <0 1 53 54>;
+            slow-release;
+            require-prior-idle-ms = <200>;
         };
 
         tog_german {
             bindings = <&tog 1>;
             key-positions = <34 35>;
+            require-prior-idle-ms = <200>;
         };
 
         nav_word {
             bindings = <&nav_word 5>;
             key-positions = <31 32 33>;
+            require-prior-idle-ms = <200>;
         };
 
         fcaret {
             bindings = <&caret_dual>;
             key-positions = <0 12>;
+            require-prior-idle-ms = <200>;
         };
 
         f1 {
             bindings = <&kp F1>;
             key-positions = <1 13>;
+            require-prior-idle-ms = <200>;
         };
 
         f2 {
             bindings = <&kp F2>;
             key-positions = <2 14>;
+            require-prior-idle-ms = <200>;
         };
 
         f3 {
             bindings = <&kp F3>;
             key-positions = <3 15>;
+            require-prior-idle-ms = <200>;
         };
 
         f4 {
             bindings = <&kp F4>;
             key-positions = <4 16>;
+            require-prior-idle-ms = <200>;
         };
 
         f5 {
             bindings = <&kp F5>;
             key-positions = <5 17>;
+            require-prior-idle-ms = <200>;
         };
 
         f6 {
             bindings = <&kp F6>;
             key-positions = <6 18>;
+            require-prior-idle-ms = <200>;
         };
 
         f7 {
             bindings = <&kp F7>;
             key-positions = <7 19>;
+            require-prior-idle-ms = <200>;
         };
 
         f8 {
             bindings = <&kp F8>;
             key-positions = <8 20>;
+            require-prior-idle-ms = <200>;
         };
 
         f9 {
             bindings = <&kp F9>;
             key-positions = <9 21>;
+            require-prior-idle-ms = <200>;
         };
 
         f10 {
             bindings = <&kp F10>;
             key-positions = <10 22>;
+            require-prior-idle-ms = <200>;
         };
 
         f11 {
             bindings = <&kp F11>;
             key-positions = <11 23>;
+            require-prior-idle-ms = <200>;
         };
 
         f12 {
             bindings = <&kp F12>;
             key-positions = <10 11>;
+            require-prior-idle-ms = <200>;
         };
 
         sgreaterthan {
             bindings = <&kp DE_GT>;
             key-positions = <24 12>;
+            require-prior-idle-ms = <200>;
         };
 
         s1 {
             bindings = <&kp RS(N1)>;
             key-positions = <25 13>;
+            require-prior-idle-ms = <200>;
         };
 
         s2 {
             bindings = <&kp RS(N2)>;
             key-positions = <14 26>;
+            require-prior-idle-ms = <200>;
         };
 
         s3 {
             bindings = <&kp RS(N3)>;
             key-positions = <15 27>;
+            require-prior-idle-ms = <200>;
         };
 
         s4 {
             bindings = <&kp RS(N4)>;
             key-positions = <16 28>;
+            require-prior-idle-ms = <200>;
         };
 
         s5 {
             bindings = <&kp RS(N5)>;
             key-positions = <17 29>;
+            require-prior-idle-ms = <200>;
         };
 
         s6 {
             bindings = <&kp RS(N6)>;
             key-positions = <18 30>;
+            require-prior-idle-ms = <200>;
         };
 
         s7 {
             bindings = <&kp RS(N7)>;
             key-positions = <19 31>;
+            require-prior-idle-ms = <200>;
         };
 
         s8 {
             bindings = <&kp RS(N8)>;
             key-positions = <20 32>;
+            require-prior-idle-ms = <200>;
         };
 
         s9 {
             bindings = <&kp RS(N9)>;
             key-positions = <21 33>;
+            require-prior-idle-ms = <200>;
         };
 
         s0 {
             bindings = <&kp RS(N0)>;
             key-positions = <22 34>;
+            require-prior-idle-ms = <200>;
         };
 
         sqmark {
             bindings = <&kp DE_QUESTION>;
             key-positions = <23 35>;
+            require-prior-idle-ms = <200>;
         };
 
         apipe {
             bindings = <&kp DE_PIPE>;
             key-positions = <36 24>;
+            require-prior-idle-ms = <200>;
         };
 
         a7 {
             bindings = <&kp DE_LBRC>;
             key-positions = <31 45>;
+            require-prior-idle-ms = <200>;
         };
 
         a8 {
             bindings = <&kp DE_LBKT>;
             key-positions = <32 46>;
+            require-prior-idle-ms = <200>;
         };
 
         a9 {
             bindings = <&kp DE_RBKT>;
             key-positions = <47 33>;
+            require-prior-idle-ms = <200>;
         };
 
         a0 {
             bindings = <&kp DE_RBRC>;
             key-positions = <48 34>;
+            require-prior-idle-ms = <200>;
         };
 
         abackslash {
             bindings = <&kp DE_BSLH>;
             key-positions = <49 35>;
+            require-prior-idle-ms = <200>;
         };
 
         typo_xc {
@@ -229,21 +265,25 @@
         ctrl_a {
             bindings = <&kp RC(A)>;
             key-positions = <25 37>;
+            require-prior-idle-ms = <200>;
         };
 
         ctrl_x {
             bindings = <&kp RC(DE_X)>;
             key-positions = <50 38>;
+            require-prior-idle-ms = <200>;
         };
 
         ctrl_c {
             bindings = <&kp RC(C)>;
             key-positions = <51 39>;
+            require-prior-idle-ms = <200>;
         };
 
         ctrl_v {
             bindings = <&kp RC(V)>;
             key-positions = <52 40>;
+            require-prior-idle-ms = <200>;
         };
     };
 
