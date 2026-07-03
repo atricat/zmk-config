@@ -285,11 +285,6 @@
             key-positions = <52 40>;
             require-prior-idle-ms = <200>;
         };
-
-        alt_m {
-            bindings = <&kp LA(M)>;
-            key-positions = <57 45>;
-        };
     };
 
     macros {
